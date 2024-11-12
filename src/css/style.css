@@ -1,82 +1,50 @@
-/* RESET */
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-/*
-  2. Remove default margin
-*/
-* {
-  margin: 0;
-}
-/*
-  3. Allow percentage-based heights in the application
-*/
-html,
-body {
-  height: 100%;
-}
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-/*
-  6. Improve media defaults
-*/
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-/*
-  7. Remove built-in form typography styles
-*/
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-/*
-  8. Avoid text overflows
-*/
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #ffd12d;
 }
 
-/* from https://www.joshwcomeau.com/css/custom-css-reset/ */
-.container {
+/**
+ * from 11tree:
+ * DIY classless theme - leverage Tailwind's classes to compose your own classless theme!
+ * This is extremely powerful if you know semantic html, accessibility, and good design principles.
+ */
+@layer components {
+  body {
+    @apply text-slate-800 text-center bg-stone-50;
+  }
+  a,
+  button {
+    @apply py-2 px-5 bg-emerald-600 leading-relaxed tracking-wider uppercase font-semibold text-sm text-white rounded-md shadow-md transition-colors duration-300 hover:bg-emerald-950 focus:outline-none focus:ring ring-offset-1 focus:ring-emerald-600 inline-block w-full text-center hover:enabled:cursor-pointer;
+  }
+  [type="button"] {
+    @apply bg-emerald-600;
+  }
+  h1 {
+    @apply text-4xl font-bold text-slate-800 text-center;
+  }
+  h2 {
+    @apply text-3xl font-bold text-slate-800 text-center;
+  }
+  h3 {
+    @apply text-2xl font-bold text-slate-800 text-center;
+  }
+  h4 {
+    @apply text-xl font-bold text-slate-800 text-center;
+  }
+  .section {
+    @apply max-w-lg m-auto space-y-5 md:space-y-7;
+  }
+}
+
+.pageContainer {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(
     142deg,
     #ed7eb6 16.67%,
@@ -93,20 +61,15 @@ h6 {
   );
   background-size: 100vw 100vh;
 }
-img {
-  object-fit: contain;
-  height: 100vh;
-}
-.pageContainer {
-  position: relative;
-}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 0.3rem;
 }
 
-.text-decoration-none {
-  text-decoration: none;
+body {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(34, 193, 195, 1) 60%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
