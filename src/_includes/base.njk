@@ -16,8 +16,14 @@
         <link rel="stylesheet" href="{{ icon.url | url }}"/>
         <title>{{ title }}</title>
     </head>
-    <body class="body m-5 md:m-7 space-y-9">
-        <div class="space-y-9">
+    <body>
+        {% if hideNavbar %}
+        {% else %}
+            <div class="navbar mt-10 flex max-w-4xl m-auto h-10 items-center px-4 lg:px-0">
+                <a href="/" class="h-full md:mx-0"><img alt="Otter Chaos!" src="/text-logo.png"></a>
+            </div>
+        {% endif %}
+        <div class="body space-y-9">
             {% include 'header.njk' %}
             {{ content | safe }}
         </div>
