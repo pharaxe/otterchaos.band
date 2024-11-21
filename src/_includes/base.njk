@@ -15,10 +15,10 @@
         <link rel="stylesheet" href="/css/style.css"/>
         <link rel="stylesheet" href="{{ icon.url | url }}"/>
         <title>{{ title }}</title>
-        <meta property="og:title" content={{title or renderData.title or metadata.title | escape }}/>
-        <meta property="og:url" content={{page.url | escape }}/>
-        <meta property="og:description" content={{description or renderData.description }}/>
-        <meta property="og:image" content={{image | escape}}/>
+        <meta property="og:title" content="{{title or renderData.title or metadata.title | escape}}"/>
+        <meta property="og:url" content="{{page.url | escape }}"/>
+        <meta property="og:description" content="{{description or renderData.description | escape }}"/>
+        <meta property="og:image" content="{{image | escape}}"/>
         <meta property="og:type" content="article"/>
     </head>
     <body>
