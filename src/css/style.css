@@ -15,12 +15,15 @@
   body {
     @apply text-slate-800 text-center bg-stone-50;
   }
-  a,
+  .button,
   button {
     @apply py-2 px-5 bg-emerald-600 leading-relaxed tracking-wider uppercase font-semibold text-sm text-white rounded-md shadow-md transition-colors duration-300 hover:bg-emerald-950 focus:outline-none focus:ring ring-offset-1 focus:ring-emerald-600 inline-block w-full text-center hover:enabled:cursor-pointer;
   }
   [type="button"] {
     @apply bg-emerald-600;
+  }
+  .inline-links a {
+    @apply text-emerald-800 underline hover:text-emerald-900;
   }
   h1 {
     @apply text-4xl font-bold text-slate-800 text-center;
@@ -34,35 +37,38 @@
   h4 {
     @apply text-xl font-bold text-slate-800 text-center;
   }
+  .section-wrapper {
+    @apply px-5 md:px-7;
+  }
   .section {
     @apply max-w-lg m-auto space-y-5 md:space-y-7;
   }
+  .hero-section {
+    @apply max-w-4xl m-auto space-y-5 md:space-y-7;
+  }
 }
 
-.pageContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex: 1;
-  min-height: 100vh;
-  background-image: linear-gradient(
-    142deg,
-    #ed7eb6 16.67%,
-    #ed7eb6 16.67%,
-    #f28db3 33.33%,
-    #fdf974 33.33%,
-    #fae984 50%,
-    #fae984 50%,
-    #fdf974 66.67%,
-    #41c1e8 66.67%,
-    #438bc4 83.33%,
-    #428dc3 83.33%,
-    #3f8dbe 100%
-  );
-  background-size: 100vw 100vh;
+img {
+  max-width: 100%;
+}
+img[width] {
+  width: auto; /* Defer to max-width */
+}
+img[width][height] {
+  height: auto; /* Preserve aspect ratio */
 }
 
-.footer {
+.navbar {
+  img {
+    height: 100%;
+  }
+}
+
+/* Let SVG scale without boundaries */
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
 }
 
 body {
@@ -73,3 +79,14 @@ body {
     rgba(253, 187, 45, 1) 100%
   );
 }
+
+/*
+.body {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(34, 193, 195, 1) 60%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+  */

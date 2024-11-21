@@ -1,12 +1,13 @@
 ---
 title: Otter Chaos!
 layout: base.njk
+hideNavbar: true
 ---
 
 {# TODO get the sourceset sizes working #}
-<section class="section">
-  <div class="flex justify-center">
-    <div class="w-3/4">
+<div class="section-wrapper">
+  <section class="section body">
+    <div class="w-3/4 mx-auto mt-5 md:mt-7">
       {% image
       "./src/img/logo.png",
       "Otter Chaos! Logo",
@@ -14,42 +15,46 @@ layout: base.njk
  null
       " %}
     </div>
-  </div>
-  <article class="inline-flex flex-col items-center gap-4 justify-center bg-stone-300 p-7 rounded-xl">
-    <p class="text-left">
-      <span class="font-bold">Otter Chaos!</span> 
+    <article class="inline-flex flex-col items-center gap-4 justify-center bg-stone-300 p-7 rounded-xl">
+      <p class="text-left">
+        <span class="font-bold">Otter Chaos!</span> 
      is a group of furry musicians who love video game music! We perform at cons with a big band, and put on livestream shows for events on Twitch. 
      Featuring accordion, electric violin, trombone, fursuits and more!
     </p>
-  </article>
+    </article>
 
-  <a class="inline-flex w-full items-center justify-center gap-4 rounded-full" target="_blank" rel="noreferrer" href="https://bsky.app/profile/otterchaos.band">
-    <span class="icon icon--fa6-brands icon--fa6-brands--bluesky text-primary dark:text-white text-2xl'" aria-hidden="true"></span>
+    <a class="button inline-flex w-full items-center justify-center gap-4 rounded-full" target="_blank" rel="noreferrer" href="https://bsky.app/profile/otterchaos.band">
+      <span class="icon icon--fa6-brands icon--fa6-brands--bluesky text-primary dark:text-white text-2xl'" aria-hidden="true"></span>
       BlueSky
     </a>
-  <a class="inline-flex w-full items-center justify-center gap-4 rounded-full" target="_blank" rel="noreferrer" href="https://twitter.com/OtterChaosVGM">
-    <span class="icon icon--fa6-brands icon--fa6-brands--twitter text-primary dark:text-white text-2xl'" aria-hidden="true"></span>
+    <a class="button inline-flex w-full items-center justify-center gap-4 rounded-full" target="_blank" rel="noreferrer" href="https://twitter.com/OtterChaosVGM">
+      <span class="icon icon--fa6-brands icon--fa6-brands--twitter text-primary dark:text-white text-2xl'" aria-hidden="true"></span>
       Twitter
     </a>
-  <a class="inline-flex w-full items-center justify-center gap-4 rounded-full" target="_blank" rel="noreferrer" href="https://youtube.com/@OtterChaosVGM">
-    <span class="icon icon--fa6-brands icon--fa6-brands--youtube text-primary dark:text-white text-2xl'" aria-hidden="true"></span>
+    <a class="button inline-flex w-full items-center justify-center gap-4 rounded-full" target="_blank" rel="noreferrer" href="https://youtube.com/@OtterChaosVGM">
+      <span class="icon icon--fa6-brands icon--fa6-brands--youtube text-primary dark:text-white text-2xl'" aria-hidden="true"></span>
     YouTube
   </a>
 
-  <article class="inline-flex flex-col items-center gap-4 justify-center bg-stone-300 p-7 rounded-xl hover:shadow-lg transition-shadow">
-    <header>
-      <h3>
+    <article class="inline-flex flex-col items-center gap-4 justify-center bg-stone-300 p-7 rounded-xl hover:shadow-lg transition-shadow">
+      <header>
+        <h3>
         Watch our most recent concert!
       </h3>
-    </header>
-    <a href="https://www.youtube.com/watch?v=RhUJA6ehZBQ" class="p-2">
-      <img src="https://img.youtube.com/vi/RhUJA6ehZBQ/0.jpg" alt="thumbnail" class="rounded aspect-video object-cover" draggable="false"/>
-    </a>
-    <footer>
-      <span class="text-left">
+      </header>
+      <a href="https://www.youtube.com/watch?v=RhUJA6ehZBQ" class="p-2 button">
+        <div>
+          <img src="https://img.youtube.com/vi/RhUJA6ehZBQ/0.jpg" alt="thumbnail" class="rounded aspect-video object-cover" draggable="false"/>
+        </div>
+      </a>
+      <footer>
+        <span class="text-left">
         IndyFurCon 2024
       </span>
-    </footer>
-  </article>
-</section>
-{% include 'footer.njk' %}
+      </footer>
+    </article>
+    <div class=" text-gray-600">
+      {% include 'footer.njk' %}
+    </div>
+  </section>
+</div>

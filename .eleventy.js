@@ -5,14 +5,19 @@ import Image from "@11ty/eleventy-img";
 
 const IS_PROD_BUILD = process.env.NODE_ENV === "production";
 
-async function imageShortcode(src, alt, sizes) {
-  let metadata = await Image(src, {
-    widths: [600, 900, 1500],
+async function imageShortcode(
+  src,
+  alt,
+  sizes = "100vh",
+  widths = [600, 900, 1500]
+) {
+  const metadata = await Image(src, {
+    widths,
     formats: ["avif", "webp", "png"],
     outputDir: "./public/img/",
   });
 
-  let imageAttributes = {
+  const imageAttributes = {
     alt,
     sizes,
     loading: "lazy",
