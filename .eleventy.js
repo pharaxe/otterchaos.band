@@ -34,6 +34,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/img/favicon": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/static": "/" });
   eleventyConfig.addPassthroughCopy("./CNAME");
+  eleventyConfig.addPassthroughCopy("src/**/*.pdf");
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(postcssPlugin);
 
