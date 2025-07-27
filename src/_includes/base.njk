@@ -24,16 +24,18 @@
     <body>
         {% if hideNavbar %}
         {% else %}
-            <div class="navbar mt-10 flex max-w-4xl m-auto h-10 justify-between items-end px-4 lg:px-0">
-                <a href="/" class="h-full md:mx-0"><img alt="Otter Chaos!" src="/text-logo.png"></a>
-                <div className="flex items-end">
-                    <a class="ml-2" target="_blank" rel="noreferrer" href="https://bsky.app/profile/otterchaos.band">
-                        <span class="text-xl sm:text-3xl text-[#583e26] icon icon--fa6-brands icon--fa6-brands--bluesky" aria-label="Bluesky"></span>
+            <div class="navbar mt-10 flex max-w-4xl m-auto h-10 justify-between px-4 lg:px-0">
+                <a href="/" class="h-full md:mx-0 p-2 hover:bg-emerald-500 rounded">
+                    <img alt="Otter Chaos!" src="/text-logo-simple.png">
+                </a>
+                <div class="flex">
+                    <a class="flex items-center ml-2 p-2 rounded hover:bg-emerald-500" target="_blank" rel="noreferrer" href="https://bsky.app/profile/otterchaos.band">
+                        <span class="text-xl sm:text-3xl  text-[#583e26] icon icon--fa6-brands icon--fa6-brands--bluesky" aria-label="Bluesky"></span>
                     </a>
-                    <a class="ml-2" target="_blank" rel="noreferrer" href="https://twitter.com/OtterChaosVGM">
+                    <a class="flex items-center ml-2 p-2 rounded hover:bg-emerald-500" target="_blank" rel="noreferrer" href="https://twitter.com/OtterChaosVGM">
                         <span class="text-xl sm:text-3xl text-[#583e26] icon icon--fa6-brands icon--fa6-brands--twitter" aria-label="Twitter"></span>
                     </a>
-                    <a class="ml-2" target="_blank" rel="noreferrer" href="https://youtube.com/@OtterChaosVGM">
+                    <a class="flex items-center ml-2 p-2 rounded hover:bg-emerald-500" target="_blank" rel="noreferrer" href="https://youtube.com/@OtterChaosVGM">
                         <span class="text-xl sm:text-3xl nav-icon-link icon--fa6-border text-[#583e26] icon icon--fa6-brands icon--fa6-brands--youtube" aria-label="YouTube"></span>
                     </a>
                 </div>
