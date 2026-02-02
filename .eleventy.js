@@ -9,7 +9,7 @@ async function imageShortcode(
   src,
   alt,
   sizes = "100vh",
-  widths = [600, 900, 1500]
+  widths = [600, 900, 1500],
 ) {
   const metadata = await Image(src, {
     widths,
@@ -79,7 +79,7 @@ export default function (eleventyConfig) {
    */
   eleventyConfig.addGlobalData("icon", {
     theme: "fa6-brands",
-    list: ["youtube", "twitter", "bluesky"],
+    list: ["youtube", "twitter", "bluesky", "instagram", "facebook"],
     get url() {
       const iconListParam = encodeURIComponent(this.list.join(","));
       return `https://api.iconify.design/${this.theme}.css?icons=${iconListParam}`;
