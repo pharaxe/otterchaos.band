@@ -72,6 +72,9 @@ img[src$=".svg"] {
 }
 
 body {
+  min-height: 100dvh;
+  margin: 0;
+  padding-top:1px;
   background: repeating-linear-gradient(
     0deg,
     rgba(34, 193, 195, 1) 0%,

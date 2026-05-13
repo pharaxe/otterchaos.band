@@ -1,0 +1,515 @@
+---
+title: Otter Chaos! Band Merch
+layout: base.njk
+description: Buy Otter Chaos! Merch
+image: /otterchaos-ograph.png
+url: otterchaos.band/merch/t-shirt
+---
+
+<div class="section-wrapper">
+  <section class="hero-section">
+    <div class="py-4 mx-auto lg:py-10">
+      <h1 class="mb-4 flex flex-wrap items-baseline gap-2 text-left">
+        <a href="/merch" class="rounded px-2 py-1 text-xl font-extrabold leading-none text-[#583e26] transition-colors hover:bg-emerald-500 md:text-3xl xl:text-4xl">
+          Band Merch
+        </a>
+        <span class="text-lg font-bold text-gray-500 md:text-2xl xl:text-3xl">/</span>
+        <span aria-current="page" class="rounded px-2 py-1 text-xl font-extrabold leading-none text-[#583e26] md:text-3xl xl:text-4xl">
+          T-Shirt
+        </span>
+      </h1>
+      {% include "merch-statement.njk" %}
+
+      <div
+        id="tshirt-specs-modal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 px-4 py-6"
+        aria-hidden="true"
+      >
+        <div class="w-full max-w-lg rounded-2xl bg-stone-100 p-6 shadow-2xl ring-1 ring-black/10">
+          <div class="flex items-start justify-between gap-4">
+            <h2 class="text-2xl font-bold text-[#583e26]">T-Shirt Specs</h2>
+            <button
+              type="button"
+              id="tshirt-specs-close"
+              class="rounded-full p-2 text-stone-600 hover:bg-stone-200 hover:text-stone-900"
+              aria-label="Close specs modal"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <ul class="mt-4 list-disc space-y-2 pl-6 text-left text-gray-800 md:text-lg">
+            <li>100% Airlume combed and ring-spun cotton</li>
+            <li>Pre-shrunk</li>
+            <li>Retail fit</li>
+            <li>Unisex sizing</li>
+            <li>Coverstitched collar and sleeves</li>
+            <li>Shoulder-to-shoulder taping</li>
+            <li>Side seams</li>
+            <li>Tear away label</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        id="tshirt-size-chart-modal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 px-4 py-6"
+        aria-hidden="true"
+      >
+        <div class="w-full max-w-4xl rounded-2xl bg-stone-100 p-6 shadow-2xl ring-1 ring-black/10">
+          <div class="flex items-start justify-between gap-4">
+            <h2 class="text-2xl font-bold text-[#583e26]">Size Chart (in inches)</h2>
+            <button
+              type="button"
+              id="tshirt-size-chart-close"
+              class="rounded-full p-2 text-stone-600 hover:bg-stone-200 hover:text-stone-900"
+              aria-label="Close size chart modal"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="mt-4 overflow-x-auto">
+            <table class="min-w-full border-collapse text-left text-sm text-gray-800 md:text-base">
+              <thead>
+                <tr class="border-b border-stone-300">
+                  <th class="px-3 py-2 font-semibold"></th>
+                  <th class="px-3 py-2 font-semibold">XS</th>
+                  <th class="px-3 py-2 font-semibold">S</th>
+                  <th class="px-3 py-2 font-semibold">M</th>
+                  <th class="px-3 py-2 font-semibold">L</th>
+                  <th class="px-3 py-2 font-semibold">XL</th>
+                  <th class="px-3 py-2 font-semibold">2XL</th>
+                  <th class="px-3 py-2 font-semibold">3XL</th>
+                  <th class="px-3 py-2 font-semibold">4XL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-stone-200">
+                  <th class="px-3 py-2 font-semibold">Body Length</th>
+                  <td class="px-3 py-2">27</td>
+                  <td class="px-3 py-2">28</td>
+                  <td class="px-3 py-2">29</td>
+                  <td class="px-3 py-2">30</td>
+                  <td class="px-3 py-2">31</td>
+                  <td class="px-3 py-2">32</td>
+                  <td class="px-3 py-2">33</td>
+                  <td class="px-3 py-2">34</td>
+                </tr>
+                <tr class="border-b border-stone-200">
+                  <th class="px-3 py-2 font-semibold">Body Length Tolerance</th>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                </tr>
+                <tr class="border-b border-stone-200">
+                  <th class="px-3 py-2 font-semibold">Chest Tolerance</th>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                  <td class="px-3 py-2">1</td>
+                </tr>
+                <tr class="border-b border-stone-200">
+                  <th class="px-3 py-2 font-semibold">Chest Width (Laid Flat)</th>
+                  <td class="px-3 py-2">16 1/2</td>
+                  <td class="px-3 py-2">18</td>
+                  <td class="px-3 py-2">20</td>
+                  <td class="px-3 py-2">22</td>
+                  <td class="px-3 py-2">24</td>
+                  <td class="px-3 py-2">26</td>
+                  <td class="px-3 py-2">28</td>
+                  <td class="px-3 py-2">30</td>
+                </tr>
+                <tr>
+                  <th class="px-3 py-2 font-semibold">Neck Size</th>
+                  <td class="px-3 py-2">6</td>
+                  <td class="px-3 py-2">6 1/2</td>
+                  <td class="px-3 py-2">6 3/4</td>
+                  <td class="px-3 py-2">7</td>
+                  <td class="px-3 py-2">7 1/2</td>
+                  <td class="px-3 py-2">7 3/4</td>
+                  <td class="px-3 py-2">7 3/4</td>
+                  <td class="px-3 py-2">8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="ml-2 rounded-2xl border border-stone-300 bg-stone-100 p-4 shadow-sm md:p-6">
+        <div class="relative min-h-[440px]">
+          <div id="tshirt-product-loader" class="absolute inset-0 z-10 flex items-center justify-center transition-opacity duration-300">
+            <span class="h-12 w-12 animate-spin rounded-full border-4 border-emerald-200 border-t-emerald-600"></span>
+          </div>
+          <div id='product-component-1778636637273' class="min-h-[440px] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-3 justify-center">
+          <button
+          type="button"
+          id="tshirt-specs-trigger"
+          class="inline-flex items-center rounded-full border border-emerald-600 px-4 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-50"
+        >
+          Specs
+          </button>
+          <button
+          type="button"
+          id="tshirt-size-chart-trigger"
+          class="inline-flex items-center rounded-full border border-emerald-600 px-4 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-50"
+        >
+          Size Chart
+        </button>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        /* <![CDATA[ */
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
+
+          function revealProduct() {
+            var loader = document.getElementById('tshirt-product-loader');
+            var productNode = document.getElementById('product-component-1778636637273');
+
+            if (loader) {
+              loader
+                .classList
+                .add('opacity-0', 'pointer-events-none');
+            }
+
+            if (productNode) {
+              productNode
+                .classList
+                .remove('opacity-0', 'pointer-events-none');
+            }
+          }
+
+          function waitForProductReady() {
+            var productNode = document.getElementById('product-component-1778636637273');
+            var attempts = 0;
+            var maxAttempts = 80;
+            var interval = setInterval(function () {
+              attempts += 1;
+
+              if (!productNode) {
+                clearInterval(interval);
+                revealProduct();
+                return;
+              }
+
+              var iframe = productNode.querySelector('iframe');
+              var hasContent = productNode.children.length > 0;
+
+              if (iframe) {
+                clearInterval(interval);
+
+                var revealed = false;
+                function finishReveal() {
+                  if (revealed) {
+                    return;
+                  }
+                  revealed = true;
+                  revealProduct();
+                }
+
+                iframe.addEventListener('load', finishReveal, {once: true});
+                setTimeout(finishReveal, 1200);
+                return;
+              }
+
+              if (hasContent || attempts >= maxAttempts) {
+                clearInterval(interval);
+                revealProduct();
+              }
+            }, 100);
+          }
+
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({domain: 'pva2eb-3y.myshopify.com', storefrontAccessToken: '2658057bbfc76a76785906bd6d467fd4'});
+            ShopifyBuy
+              .UI
+              .onReady(client)
+              .then(function (ui) {
+                ui.createComponent('product', {
+                  id: '8567568728247',
+                  node: document.getElementById('product-component-1778636637273'),
+                  moneyFormat: '%24%7B%7Bamount%7D%7D',
+                  options: {
+                    "product": {
+                      "styles": {
+                        "product": {
+                          "@media (min-width: 601px)": {
+                            "max-width": "100%",
+                            "margin-left": "0",
+                            "margin-bottom": "50px"
+                          },
+                          "text-align": "left"
+                        },
+                        "imgWithCarousel": {
+                          "max-height": "450px",
+                          "object-fit": "contain"
+                        },
+                        "img": {
+                          "max-height": "450px",
+                          "object-fit": "contain"
+                        },
+                        "title": {
+                          "font-size": "26px"
+                        },
+                        "description": {
+                          "font-size": "16px"
+                        },
+                        "button": {
+                          "font-family": "Source Sans Pro, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "17px",
+                          "padding-top": "16.5px",
+                          "padding-bottom": "16.5px",
+                          ":hover": {
+                            "background-color": "#05875f"
+                          },
+                          "background-color": "#059669",
+                          ":focus": {
+                            "background-color": "#05875f"
+                          }
+                        },
+                        "quantityInput": {
+                          "font-size": "17px",
+                          "padding-top": "16.5px",
+                          "padding-bottom": "16.5px"
+                        },
+                        "price": {
+                          "font-size": "18px"
+                        },
+                        "compareAt": {
+                          "font-size": "15.299999999999999px"
+                        },
+                        "unitPrice": {
+                          "font-size": "15.299999999999999px"
+                        }
+                      },
+                      "layout": "horizontal",
+                      "contents": {
+                        "img": false,
+                        "imgWithCarousel": true,
+                        "description": true
+                      },
+                      "width": "100%",
+                      "text": {
+                        "button": "Add to cart"
+                      },
+                      "googleFonts": ["Source Sans Pro"]
+                    },
+                    "productSet": {
+                      "styles": {
+                        "products": {
+                          "@media (min-width: 601px)": {
+                            "margin-left": "-20px"
+                          }
+                        }
+                      }
+                    },
+                    "modalProduct": {
+                      "contents": {
+                        "img": false,
+                        "imgWithCarousel": true,
+                        "button": false,
+                        "buttonWithQuantity": true
+                      },
+                      "styles": {
+                        "product": {
+                          "@media (min-width: 601px)": {
+                            "max-width": "100%",
+                            "margin-left": "0px",
+                            "margin-bottom": "0px"
+                          }
+                        },
+                        "imgWithCarousel": {
+                          "max-height": "520px",
+                          "object-fit": "contain"
+                        },
+                        "img": {
+                          "max-height": "520px",
+                          "object-fit": "contain"
+                        },
+                        "button": {
+                          "font-family": "Source Sans Pro, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "17px",
+                          "padding-top": "16.5px",
+                          "padding-bottom": "16.5px",
+                          ":hover": {
+                            "background-color": "#05875f"
+                          },
+                          "background-color": "#059669",
+                          ":focus": {
+                            "background-color": "#05875f"
+                          }
+                        },
+                        "quantityInput": {
+                          "font-size": "17px",
+                          "padding-top": "16.5px",
+                          "padding-bottom": "16.5px"
+                        },
+                        "title": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "26px",
+                          "color": "#4c4c4c"
+                        },
+                        "price": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "normal",
+                          "font-size": "18px",
+                          "color": "#4c4c4c"
+                        },
+                        "compareAt": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "normal",
+                          "font-size": "15.299999999999999px",
+                          "color": "#4c4c4c"
+                        },
+                        "unitPrice": {
+                          "font-family": "Helvetica Neue, sans-serif",
+                          "font-weight": "normal",
+                          "font-size": "15.299999999999999px",
+                          "color": "#4c4c4c"
+                        }
+                      },
+                      "googleFonts": ["Source Sans Pro"],
+                      "text": {
+                        "button": "Add to cart"
+                      }
+                    },
+                    "option": {},
+                    "cart": {
+                      "styles": {
+                        "button": {
+                          "font-family": "Source Sans Pro, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "17px",
+                          "padding-top": "16.5px",
+                          "padding-bottom": "16.5px",
+                          ":hover": {
+                            "background-color": "#05875f"
+                          },
+                          "background-color": "#059669",
+                          ":focus": {
+                            "background-color": "#05875f"
+                          }
+                        }
+                      },
+                      "text": {
+                        "total": "Subtotal",
+                        "button": "Checkout"
+                      },
+                      "googleFonts": ["Source Sans Pro"]
+                    },
+                    "toggle": {
+                      "styles": {
+                        "toggle": {
+                          "font-family": "Source Sans Pro, sans-serif",
+                          "font-weight": "bold",
+                          "background-color": "#059669",
+                          ":hover": {
+                            "background-color": "#05875f"
+                          },
+                          ":focus": {
+                            "background-color": "#05875f"
+                          }
+                        },
+                        "count": {
+                          "font-size": "17px"
+                        }
+                      },
+                      "googleFonts": ["Source Sans Pro"]
+                    }
+                  }
+                });
+                waitForProductReady();
+              });
+          }
+        })();
+        /* ]]> */
+      </script>
+
+      <script type="text/javascript">
+        (function () {
+          function setupModal(triggerId, modalId, closeId) {
+            var trigger = document.getElementById(triggerId);
+            var modal = document.getElementById(modalId);
+            var closeButton = document.getElementById(closeId);
+
+            if (!trigger || !modal || !closeButton) {
+              return;
+            }
+
+            function openModal() {
+              modal
+                .classList
+                .remove('hidden');
+              modal
+                .classList
+                .add('flex');
+              modal.setAttribute('aria-hidden', 'false');
+              closeButton.focus();
+            }
+
+            function closeModal() {
+              modal
+                .classList
+                .add('hidden');
+              modal
+                .classList
+                .remove('flex');
+              modal.setAttribute('aria-hidden', 'true');
+              trigger.focus();
+            }
+
+            trigger.addEventListener('click', openModal);
+            closeButton.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', function (event) {
+              if (event.target === modal) {
+                closeModal();
+              }
+            });
+
+            document.addEventListener('keydown', function (event) {
+              if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+              }
+            });
+          }
+
+          setupModal('tshirt-specs-trigger', 'tshirt-specs-modal', 'tshirt-specs-close');
+          setupModal('tshirt-size-chart-trigger', 'tshirt-size-chart-modal', 'tshirt-size-chart-close');
+        })();
+      </script>
+    </div>
+  </section>
+</div>

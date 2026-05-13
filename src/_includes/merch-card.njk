@@ -1,0 +1,7 @@
+<div class="group flex flex-col text-center">
+  <a href="{{ item.href }}" class="flex min-h-[320px] items-center justify-center overflow-hidden rounded-xl border border-stone-200 bg-white p-3 transition-shadow hover:shadow-md group-hover:shadow-md">
+    <img src="{{ item.image }}" alt="{{ item.alt }}" class="max-h-[320px] w-full object-contain" loading="lazy">
+  </a>
+  <a href="{{ item.href }}" class="mt-4 block text-xl font-bold text-[#583e26] hover:underline group-hover:underline">{{ item.title }}</a>
+  <a href="{{ item.href }}" class="mt-1 block text-lg font-semibold text-gray-800 hover:underline group-hover:underline">{{ item.price }}</a>
+</div>
