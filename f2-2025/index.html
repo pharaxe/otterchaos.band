@@ -118,5 +118,94 @@
     </section>
   </div>
         </div>
+
+        <div id="shopify-site-cart" class="hidden"></div>
+        <script type="text/javascript">
+            (function () {
+                var hasProductComponents = document.querySelector('[id^="product-component-"]');
+                if (hasProductComponents) {
+                    return;
+                }
+
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+
+                function loadScript(callback) {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                    script.onload = callback;
+                }
+
+                function ShopifyBuyInit() {
+                    var cartNode = document.getElementById('shopify-site-cart');
+                    if (!cartNode) {
+                        return;
+                    }
+
+                    var client = ShopifyBuy.buildClient({domain: 'pva2eb-3y.myshopify.com', storefrontAccessToken: '2658057bbfc76a76785906bd6d467fd4'});
+
+                    ShopifyBuy
+                        .UI
+                        .onReady(client)
+                        .then(function (ui) {
+                            ui.createComponent('cart', {
+                                node: cartNode,
+                                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                                options: {
+                                    "cart": {
+                                        "styles": {
+                                            "button": {
+                                                "font-family": "Source Sans Pro, sans-serif",
+                                                "font-weight": "bold",
+                                                "font-size": "17px",
+                                                "padding-top": "16.5px",
+                                                "padding-bottom": "16.5px",
+                                                ":hover": {
+                                                    "background-color": "#05875f"
+                                                },
+                                                "background-color": "#059669",
+                                                ":focus": {
+                                                    "background-color": "#05875f"
+                                                }
+                                            }
+                                        },
+                                        "text": {
+                                            "total": "Subtotal",
+                                            "button": "Checkout"
+                                        },
+                                        "googleFonts": ["Source Sans Pro"]
+                                    },
+                                    "toggle": {
+                                        "styles": {
+                                            "toggle": {
+                                                "font-family": "Source Sans Pro, sans-serif",
+                                                "font-weight": "bold",
+                                                "background-color": "#059669",
+                                                ":hover": {
+                                                    "background-color": "#05875f"
+                                                },
+                                                ":focus": {
+                                                    "background-color": "#05875f"
+                                                }
+                                            },
+                                            "count": {
+                                                "font-size": "17px"
+                                            }
+                                        },
+                                        "googleFonts": ["Source Sans Pro"]
+                                    }
+                                }
+                            });
+                        });
+                }
+
+                if (window.ShopifyBuy && window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                } else {
+                    loadScript(ShopifyBuyInit);
+                }
+            })();
+        </script>
     </body>
 </html>
