@@ -73,6 +73,8 @@ img[src$=".svg"] {
 
 body {
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding-top:1px;
   background: repeating-linear-gradient(

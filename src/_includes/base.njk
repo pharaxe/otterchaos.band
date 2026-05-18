@@ -24,7 +24,7 @@
   <body>
     {% if hideNavbar %}
     {% else %}
-      <div class="navbar mt-10 flex max-w-4xl m-auto h-10 md:h-16 justify-between px-4 lg:px-0">
+      <div class="navbar mt-10 flex w-full max-w-4xl mx-auto h-10 md:h-16 justify-between px-4 lg:px-0">
         <a href="/" class="h-full md:mx-0 p-2 hover:bg-emerald-500 rounded">
           <img alt="Otter Chaos!" src="/text-logo-simple.png" class="h-full">
         </a>
@@ -41,7 +41,7 @@
         </div>
       </div>
     {% endif %}
-    <div class="body space-y-9">
+    <div class="body flex w-full flex-1 flex-col space-y-9">
       {% include 'header.njk' %}
       {{ content | safe }}
     </div>
