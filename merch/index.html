@@ -84,6 +84,107 @@ Support the band by buying some merch!
           </div>
         
       </div>
+
+      <footer class="mx-auto mt-8 mb-2 px-2 text-center text-xs text-stone-700">
+  <div class="flex justify-center">
+    <div class="inline-flex max-w-full items-center gap-2 whitespace-nowrap overflow-x-auto">
+      <a
+        href="https://otter-chaos-band-merch.myshopify.com/policies/privacy-policy"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="decoration-stone-400 underline-offset-2 hover:text-emerald-900 hover:underline"
+      >Privacy Policy</a>
+      <span aria-hidden="true">|</span>
+      <a
+        href="https://otter-chaos-band-merch.myshopify.com/policies/refund-policy"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="decoration-stone-400 underline-offset-2 hover:text-emerald-900 hover:underline"
+      >Refund Policy</a>
+      <span aria-hidden="true">|</span>
+      <button
+        type="button"
+        id="merch-contact-trigger"
+        class="decoration-stone-400 underline-offset-2 hover:text-emerald-900 hover:underline"
+      >Contact Information</button>
+    </div>
+  </div>
+
+  <div
+    id="merch-contact-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 px-4 py-6"
+    aria-hidden="true"
+  >
+    <div class="w-full max-w-lg rounded-2xl bg-stone-100 p-6 text-left shadow-2xl ring-1 ring-black/10">
+      <div class="flex items-start justify-between gap-4">
+        <h2 class="text-xl font-bold text-[#583e26]">Contact Information</h2>
+        <button
+          type="button"
+          id="merch-contact-close"
+          class="rounded-full p-3 text-stone-600 hover:bg-stone-200 hover:text-stone-900"
+          aria-label="Close contact information modal"
+        >
+          <span aria-hidden="true" class="text-2xl leading-none">&times;</span>
+        </button>
+      </div>
+      <div class="mt-4 space-y-2 text-sm text-stone-800">
+        <p>Otter Chaos! VGM Band</p>
+        <p>Phone number: 3127157132</p>
+        <p>Email: rhubarbnido@gmail.com</p>
+        <p>Physical address: 1004 S Wabash Ave, Urbana IL 61801, United States</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    (function () {
+      var trigger = document.getElementById('merch-contact-trigger');
+      var modal = document.getElementById('merch-contact-modal');
+      var closeButton = document.getElementById('merch-contact-close');
+
+      if (!trigger || !modal || !closeButton) {
+        return;
+      }
+
+      function openModal() {
+        modal
+          .classList
+          .remove('hidden');
+        modal
+          .classList
+          .add('flex');
+        modal.setAttribute('aria-hidden', 'false');
+        closeButton.focus();
+      }
+
+      function closeModal() {
+        modal
+          .classList
+          .add('hidden');
+        modal
+          .classList
+          .remove('flex');
+        modal.setAttribute('aria-hidden', 'true');
+        trigger.focus();
+      }
+
+      trigger.addEventListener('click', openModal);
+      closeButton.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+</footer>
     </div>
   </section>
 </div>
