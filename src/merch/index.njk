@@ -9,30 +9,6 @@ url: otterchaos.band/merch
 <div class="section-wrapper flex w-full flex-1 flex-col">
   <section class="hero-section flex w-full flex-1 flex-col">
     <div class="pt-4 mx-auto flex w-full flex-1 flex-col lg:pt-10">
-      {% set merchItems = [
-        {
-          href: "/merch/t-shirt",
-          image: "./src/img/merch/tshirt.png",
-          alt: "Teal Otter Chaos! T-Shirt with logo on front",
-          title: "Otter Chaos! T-Shirt",
-          price: "$25.00"
-        },
-        {
-          href: "/merch/sticker",
-          image: "./src/img/merch/logo-sticker.png",
-          alt: "Otter Chaos! Logo Sticker",
-          title: "Otter Chaos! Sticker",
-          price: "$4.00"
-        },
-        {
-          href: "/merch/rhubarb-sticker",
-          image: "./src/img/merch/rhubarb-sticker.png",
-          alt: "Sticker of Rhubarb playing the violin",
-          title: "Rhubarb Sticker",
-          price: "$4.00"
-        }
-      ] %}
-
       <h1 class="mb-4 text-left">
         <span class="inline-block rounded px-2 py-1 text-xl font-extrabold leading-none text-[#583e26] md:text-3xl xl:text-4xl">
           Band Merch
@@ -41,16 +17,16 @@ url: otterchaos.band/merch
       {% include "merch-statement.njk" %}
 
       <div class="ml-2 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {% for item in merchItems %}
+        {% for item in products %}
           <div class="group flex flex-col text-center">
-            <a href="{{ item.href }}" class="flex min-h-[320px] items-center justify-center overflow-hidden rounded-xl border border-stone-200 bg-white p-3 transition-shadow hover:shadow-lg group-hover:shadow-lg">
+            <a href="/merch/{{ item.slug }}" class="flex min-h-[320px] items-center justify-center overflow-hidden rounded-xl border border-stone-200 bg-white p-3 transition-shadow hover:shadow-lg group-hover:shadow-lg">
               {% image
               item.image,
               item.alt,
               "null" %}
             </a>
-            <a href="{{ item.href }}" class="mt-4 block text-xl font-bold text-[#583e26] hover:underline group-hover:underline">{{ item.title }}</a>
-            <a href="{{ item.href }}" class="mt-1 block text-lg font-semibold text-gray-800 hover:underline group-hover:underline">{{ item.price }}</a>
+            <a href="/merch/{{ item.slug }}" class="mt-4 block text-xl font-bold text-[#583e26] hover:underline group-hover:underline">{{ item.name }}</a>
+            <a href="/merch/{{ item.slug }}" class="mt-1 block text-lg font-semibold text-gray-800 hover:underline group-hover:underline">{{ item.price }}</a>
           </div>
         {% endfor %}
       </div>

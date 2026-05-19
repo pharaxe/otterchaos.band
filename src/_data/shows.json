@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "f2-2025",
+    "metaTitle": "Otter Chaos! F2 2025 Concert",
+    "metaDescription": "Otter Chaos! is performing at FurSquared on Feb 23, 2025.",
+    "metaImage": "/f2-2025-square.png",
+    "title": "Otter Chaos! at FurSquared",
+    "dateString": "2025-02-23",
+    "startTime": "12:00pm",
+    "endTime": "1:00pm",
+    "location": "Milwaukee, Wisconsin",
+    "conName": "FurSquared",
+    "conShortName": "F2",
+    "posterImage": "./src/img/f2-2025.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - F2 2025, Feb 23rd, 12pm-1pm.",
+    "description": "Otter Chaos! is a group of furry musicians who love video game music. We've prepared a selection of scary songs from our favorite video games for you to enjoy at FurSquared! Come and hear live music from games like Luigi's Mansion, Indigo Park, Ori, and Metal Gear Solid; featuring instruments such as electric violin, steel pans, theremin, accordion and more!",
+    "scheduleLink": "https://schedule.fursquared.com/f2-2025/talk/8VDXP7/",
+    "scheduleButtonText": "FurSquared 2025 Schedule",
+    "registration": {
+      "title": "Register for F2",
+      "details": "The concert is open to all attendees of the convention. Badge price at the door is $30 for a Sunday badge, or $80 for the full weekend badge.",
+      "buttonText": "F2 Registration Info",
+      "buttonUrl": "https://fursquared.com/registration/"
+    }
+  },
+  {
+    "slug": "f2-2026",
+    "metaTitle": "Otter Chaos! F2 2026 Concert",
+    "metaDescription": "Otter Chaos! is performing at FurSquared on Feb 8, 2026.",
+    "metaImage": "/f2-2026-square.png",
+    "title": "Otter Chaos! at FurSquared",
+    "dateString": "2026-02-08",
+    "startTime": "12:00pm",
+    "endTime": "1:00pm",
+    "location": "Milwaukee, Wisconsin",
+    "conName": "FurSquared",
+    "conShortName": "F2",
+    "posterImage": "./src/img/f2-2026-square.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - F2 2026, Feb 8th, 12pm-1pm.",
+    "description": "Get ready for Otter Chaos! This furry video game music band is back for another chaotic concert at FurSquared! They perform original arrangements of tunes from game series such as Mario, Sonic, Undertale and Pokemon. You won't want to miss this chaotic show featuring an eclectic group of instruments including accordion, electric violin, trombone, drums, and more!",
+    "scheduleLink": "https://schedule.fursquared.com/schedule/f2-2026/activity/rm5ODb2ujU4Ygx",
+    "scheduleButtonText": "FurSquared 2026 Schedule",
+    "registration": {
+      "title": "Register for F2",
+      "details": "The concert is open to all attendees of the convention. Badge price at the door is $40 for a Sunday badge, or $70 for the full weekend badge.",
+      "buttonText": "F2 Registration Info",
+      "buttonUrl": "https://fursquared.com/registration/"
+    }
+  },
+  {
+    "slug": "vgmcon-2026",
+    "metaTitle": "Otter Chaos! VGMCON 2026 Concert",
+    "metaDescription": "Otter Chaos! is performing at VGMCON on April 4, 2026.",
+    "metaImage": "/vgmcon-2026.png",
+    "title": "Otter Chaos! at VGMCON",
+    "dateString": "2026-04-04",
+    "startTime": "2:30pm",
+    "location": "Minneapolis, Minnesota",
+    "conName": "VGMCON",
+    "conShortName": "VGMCON",
+    "posterImage": "./src/img/vgmcon-2026.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - VGMCON 2026, April 4th.",
+    "description": " Otter Chaos! is a group of musicians who combine their love of video game music and fursuit performance into a chaotic concert you won’t fur-get! Featuring fursuits(!) and an eclectic assortment of instruments, including (but not limited to): accordion, steelpans, electric violin, trombone, theremin and more! They frequently perform at furry conventions, bringing their zany arrangements to furry friends and VGM lovers alike"
+  },
+  {
+    "slug": "furality-ultra",
+    "metaTitle": "Otter Chaos! Furality Ultra Concert",
+    "metaDescription": "Otter Chaos! is performing at Furality Ultra in VRChat on June 4, 2026.",
+    "metaImage": "/furality-ultra.png",
+    "title": "Otter Chaos! at Furality Ultra",
+    "dateString": "2026-06-04",
+    "startTime": "10:00PM CDT",
+    "location": "VRChat",
+    "conName": "Furality Ultra",
+    "conShortName": "Furality",
+    "posterImage": "./src/img/furality-ultra.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - Furality Ultra, June 4th at 10:00PM CDT.",
+    "description": "Key and Rhubarb are back for another live Otter Chaos! concert. Join them for some gorgeous violin and piano covers of some of your favorite video game tunes from the era of the UltraVox Prism-featuring tracks from Katamari Damacy, Super Mario Galaxy, Persona 3, and more!",
+    "scheduleLink": "https://furality.org/schedule?active=otter-chaos",
+    "scheduleButtonText": "Furality Ultra Schedule",
+    "registration": {
+      "title": "Register for Furality Ultra",
+      "details": "The concert is open to all attendees of Furality Ultra. The General Pass is $35 which will get you access to the VRChat instances where all the events happen. Age verification is required this year so make sure to read the requirements here: <a href=\"https://furality.org/ageverification\" target=\"_blank\">https://furality.org/ageverification</a>. If you can't attend in VRChat, you can watch the show on <a href=\"https://www.twitch.tv/furality\" target=\"_blank\" rel=\"noopener\">twitch.tv/furality</a>.",
+      "buttonText": "Furality Registration",
+      "buttonUrl": "https://furality.org/register"
+    }
+  },
+  {
+    "slug": "ifc-2025",
+    "metaTitle": "Otter Chaos! IFC 2025 Concert",
+    "metaDescription": "Otter Chaos! is performing at IndyFurCon on August 17th, 2025.",
+    "metaImage": "/otterchaos-ograph.png",
+    "title": "Otter Chaos! at IndyFurCon",
+    "dateString": "2025-08-17",
+    "startTime": "1:00pm",
+    "endTime": "2:30pm",
+    "location": "Indianapolis, Indiana",
+    "conName": "IndyFurCon",
+    "conShortName": "IFC",
+    "posterImage": "./src/img/ifc-2025-poster.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - IFC 2025, Aug 17th, 1:00pm-2:30pm.",
+    "description": "Otter Chaos! is a group of furry musicians who love video game music. We've prepared a selection of songs from our favorite video games for you to enjoy at IndyFurCon! Come and hear live music from games like Baldur's Gate, Fire Emblem, Pokemon, and Sonic the Hedgehog; featuring instruments such as electric violin, steel pans, theremin, accordion and more!",
+    "scheduleLink": "https://indyfurcon2025.sched.com/event/26H2m/otter-chaos-concert",
+    "scheduleButtonText": "IndyFurCon 2025 Schedule",
+    "registration": {
+      "title": "Register for IndyFurCon",
+      "details": "The concert is open to all attendees of the convention. Badge price at the door is $35 for a Sunday badge, or $95 for the full weekend badge.",
+      "buttonText": "IFC Registration Info",
+      "buttonUrl": "https://indyfurcon.org/regtiers/"
+    }
+  },
+  {
+    "slug": "mff2024",
+    "metaTitle": "Otter Chaos! MFF 2024 Concert",
+    "metaDescription": "Otter Chaos! is performing at Midwest Furfest on Dec 6, 2024.",
+    "metaImage": "/mff2024-square.png",
+    "title": "Otter Chaos! at Midwest FurFest",
+    "dateString": "2024-12-06",
+    "startTime": "2:30pm",
+    "endTime": "3:30pm",
+    "location": "Rosemont, Illinois",
+    "conName": "Midwest FurFest",
+    "conShortName": "MFF",
+    "posterImage": "./src/img/mff2024.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - MFF 2024, Dec 6th, 2:30-3:30pm. The poster includes stickers of all 18 band members fursonas.",
+    "description": "Otter Chaos! is a group of furry musicians who love video game music. We're putting on our biggest concert yet at Midwest Furfest, with nearly 20 musicians. Come and hear live music from games like Pokemon, Mario, Metal Gear, Ori, Persona, and Cobalt Core; featuring instruments such as electric violin, steel pans, theremins, vibraphone, and more! RSVP on the MFF schedule so you don't forget!",
+    "scheduleLink": "https://mff2024.sched.com/event/1qbvs/otter-chaos-video-game-music-concert",
+    "scheduleButtonText": "MFF 2024 Schedule",
+    "registration": {
+      "title": "Register for MFF",
+      "details": "The concert is open to all attendees of the convention. Badge price at the door is $40 for a Friday badge, or $90 for the full weekend badge.",
+      "buttonText": "MFF Registration Info",
+      "buttonUrl": "https://www.furfest.org/attend/register",
+      "alertTitle": "Reg line can be long",
+      "alertText": "Pick up your badge Thursday evening or Friday morning to make sure you can attend the concert."
+    },
+    "howToAttendCardIncludes": [
+      "show-cards/mff-transit.njk"
+    ],
+    "transit": {
+      "concertLine": "2:30pm - 3:30pm on Friday Dec. 6th, Grand Ballroom (Main Stage) in the Hyatt Regency O'Hare."
+    }
+  },
+  {
+    "slug": "mff-2025",
+    "metaTitle": "Otter Chaos! MFF 2025 Concert",
+    "metaDescription": "Otter Chaos! is performing at Midwest Furfest on Dec 5, 2025 at 5pm.",
+    "metaImage": "/mff2025-smol.png",
+    "title": "Otter Chaos! at Midwest FurFest",
+    "dateString": "2025-12-05",
+    "startTime": "5:00pm",
+    "endTime": "6:30pm",
+    "location": "Rosemont, Illinois",
+    "conName": "Midwest FurFest",
+    "conShortName": "MFF",
+    "posterImage": "./src/img/mff2025.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - MFF 2025, Dec 5th, 5:00pm-6:30pm.",
+    "posterCredit": {
+      "text": "Poster design by wolfears",
+      "url": "https://bsky.app/profile/wolfears.net"
+    },
+    "description": "Otter Chaos! is a group of furry musicians who love video game music. Their live concert at Midwest Furfest will feature boss battle music and villain themes from video games, performed by a wild ensemble of instruments including: accordion, steelpans, electric violin, theremin and more!",
+    "scheduleIntro": "Don't miss the biggest Otter Chaos! concert yet. Add it to your schedule on the MFF 2025 Sched app.",
+    "scheduleLink": "https://midwestfurfest2025.sched.com/event/2AEP9/otter-chaos",
+    "scheduleButtonText": "Add to your schedule",
+    "registration": {
+      "title": "Register for MFF",
+      "details": "The concert is open to all attendees of the convention. Badge price at the door is $55 for a Friday badge, or $110 for the full weekend badge.",
+      "buttonText": "MFF Registration Info",
+      "buttonUrl": "https://www.furfest.org/attend/register",
+      "alertTitle": "Reg line can be long",
+      "alertText": "Pick up your badge Thursday evening or Friday morning to make sure you can attend the concert."
+    },
+    "howToAttendCardIncludes": [
+      "show-cards/mff-transit.njk"
+    ],
+    "transit": {
+      "concertLine": "5:00pm - 6:30pm on Friday Dec. 5th, Grand Ballroom (Main Stage) in the Hyatt Regency O'Hare."
+    }
+  }
+]

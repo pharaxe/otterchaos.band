@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "t-shirt",
+    "name": "T-Shirt",
+    "price": "$25.00",
+    "shopifyProductId": "8567568728247",
+    "shopifyProductNodeId": "product-component-1778636637273",
+    "shopifyLoaderId": "tshirt-product-loader",
+    "isShirt": true,
+    "image": "./src/img/merch/tshirt.png",
+    "alt": "Teal Otter Chaos! T-Shirt with logo on front"
+  },
+  {
+    "slug": "sticker",
+    "name": "Logo Sticker",
+    "price": "$4.00",
+    "shopifyProductId": "8569713852599",
+    "shopifyProductNodeId": "product-component-1778648856035",
+    "shopifyLoaderId": "sticker-product-loader",
+    "isShirt": false,
+    "image": "./src/img/merch/logo-sticker.png",
+    "alt": "Otter Chaos! Logo Sticker"
+  },
+  {
+    "slug": "rhubarb-sticker",
+    "name": "Rhubarb Sticker",
+    "price": "$4.00",
+    "shopifyProductId": "8569716015287",
+    "shopifyProductNodeId": "product-component-1778649260147",
+    "shopifyLoaderId": "rhubarb-sticker-product-loader",
+    "isShirt": false,
+    "image": "./src/img/merch/rhubarb-sticker.png",
+    "alt": "Sticker of Rhubarb playing the violin"
+  }
+]

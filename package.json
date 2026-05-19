@@ -6,6 +6,10 @@
   "type": "module",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
+    "validate:products": "node scripts/validate-products.mjs",
+    "validate:shows": "node scripts/validate-shows.mjs",
+    "validate:data": "npm run validate:products && npm run validate:shows",
+    "prebuild": "npm run validate:data",
     "build": "env NODE_ENV=production npx eleventy"
   },
   "keywords": [],

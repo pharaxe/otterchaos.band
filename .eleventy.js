@@ -31,6 +31,33 @@ async function imageShortcode(
 export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
   eleventyConfig.addAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addFilter("formatConcertDate", (dateString) => {
+    if (typeof dateString !== "string") return "";
+
+    const trimmed = dateString.trim();
+    const match = trimmed.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) return trimmed;
+
+    const date = new Date(`${trimmed}T00:00:00Z`);
+    if (Number.isNaN(date.getTime())) return trimmed;
+
+    return new Intl.DateTimeFormat("en-US", {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+      timeZone: "UTC",
+    }).format(date);
+  });
+  eleventyConfig.addFilter("formatConcertTimeRange", (startTime, endTime) => {
+    const start = typeof startTime === "string" ? startTime.trim() : "";
+    const end = typeof endTime === "string" ? endTime.trim() : "";
+
+    if (!start) return "";
+    if (!end) return start;
+
+    return `${start}-${end}`;
+  });
   eleventyConfig.addPassthroughCopy({ "./src/img/favicon": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/static": "/" });
   eleventyConfig.addPassthroughCopy("./CNAME");

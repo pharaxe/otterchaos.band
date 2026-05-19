@@ -1,0 +1,64 @@
+---
+title: Otter Chaos! Concerts
+layout: base.njk
+description: Upcoming concerts and archive of past shows!
+image: /otterchaos-ograph.png
+url: otterchaos.band/concerts
+permalink: "/concerts/index.html"
+---
+
+<div class="section-wrapper flex w-full flex-1 flex-col">
+  <section class="hero-section flex w-full flex-1 flex-col">
+    <div class="pt-4 mx-auto flex w-full flex-1 flex-col lg:pt-10">
+      <h1 class="mb-2 text-left">
+        <span class="inline-block rounded px-2 py-1 text-xl font-extrabold leading-none text-[#583e26] md:text-3xl xl:text-4xl">
+          Concerts
+        </span>
+      </h1>
+      <p class="mb-6 ml-2 max-w-2xl text-left text-gray-700 md:text-lg">
+        We perform video game music music at furry conventions! Here's our upcoming and past shows.
+      </p>
+
+      {% set concertList = shows | sort(true, false, "dateString") %}
+      <div class="grid grid-cols-1 items-start gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {% for show in concertList %}
+          <a href="/{{ show.slug }}" class="flex w-full flex-col overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">
+            {% if show.posterImage %}
+              <div class="overflow-hidden bg-stone-100">
+                {% image
+                show.posterImage,
+                show.posterAlt or(show.title + " poster"),
+                "null" %}
+              </div>
+            {% else %}
+              <div class="h-48 bg-gradient-to-br from-[#ffd12d] via-[#f3a633] to-[#de6b35] p-5">
+                <div class="inline-block rounded-md bg-black/10 px-3 py-1 text-sm font-bold uppercase tracking-wide text-[#583e26]">
+                  {{ show.conShortName }}
+                </div>
+                <p class="mt-4 max-w-xs text-xl font-black leading-tight text-[#583e26]">{{ show.title }}</p>
+              </div>
+            {% endif %}
+
+            <div class="space-y-2 p-5 text-left">
+              <p class="text-xl font-extrabold leading-tight text-[#583e26]">{{ show.title }}</p>
+              <p class="text-sm font-semibold uppercase tracking-wide text-emerald-700">{{ show.conName }}</p>
+              <p class="text-sm text-gray-700">{{ show.dateString | formatConcertDate }}</p>
+              <p class="text-sm text-gray-700">{{ show.startTime | formatConcertTimeRange(show.endTime) }}</p>
+              <p class="text-sm text-gray-600">{{ show.location }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+
+      {% if not concertList or not concertList.length %}
+        <p class="ml-2 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-left text-amber-900">
+          No concert data found yet. Please check back soon.
+        </p>
+      {% endif %}
+
+      <div class="text-gray-600">
+        {% include 'footer.njk' %}
+      </div>
+    </div>
+  </section>
+</div>

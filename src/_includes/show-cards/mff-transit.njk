@@ -1,0 +1,52 @@
+<article class="inline-flex flex-col items-center gap-4 justify-center bg-stone-300 p-7 rounded-xl w-full">
+  <h3 class="mr-auto text-md">Getting there</h3>
+  <svg class="drop-shadow-md" width="100%" height="100%" viewBox="0 0 500 500" style="height: auto" stroke="#059669" fill="#059669">
+    <image href="/mff-map.png" x="0" y="0" width="500" height="500"/>
+    <a class="hover:underline" target="_blank" rel="noreferrer" href="https://www.transitchicago.com/blueline/">
+      <image href="/cta-marker.svg" x="333" y="50" width="40" height="40"/>
+      <text stroke="#204a87" fill="#204a87">
+        <tspan x="300" y="105">CTA Blue Line</tspan>
+      </text>
+    </a>
+    <a class="hover:underline drop-shadow-md" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/QMzL5dqzQbyULGiR6">
+      <image href="/map-marker.svg" x="350" y="143" width="50" height="50"/>
+      <text>
+        <tspan x="360" y="210">Hyatt Regency</tspan>
+        <tspan x="360" y="210" dy="1.2em">O'Hare (Concert)</tspan>
+      </text>
+    </a>
+    <a class="hover:underline" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/Ae7iLPZHdPvgsHNw5">
+      <image href="/map-marker.svg" x="300" y="220" width="50" height="50"/>
+      <text>
+        <tspan x="250" y="290">Donald E. Stephens</tspan>
+        <tspan x="250" y="290" dy="1.2em">Convention Center</tspan>
+        <tspan x="250" y="290" dy="2.4em">(Badge Pickup)</tspan>
+      </text>
+    </a>
+    <a class="hover:underline" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/Gf8J3b8E3LbHARrM9">
+      <image href="/parking-marker.svg" x="200" y="230" width="35" height="35"/>
+      <text stroke="#204a87" fill="#204a87">
+        <tspan x="160" y="205">Parkway Bank</tspan>
+        <tspan x="160" y="205" dy="1.2em">Parking Garage</tspan>
+      </text>
+    </a>
+  </svg>
+
+  <ul class="list-none text-left inline-links">
+    <li>
+      <span class="font-bold">Public transit:</span> take the CTA Blue Line to the Rosemont stop, then transfer to the Rosemont Circulator bus which will bring you to the convention center.
+    </li>
+    <li>
+      <span class="font-bold">Public parking:</span>
+      <a href="https://maps.app.goo.gl/EMX8G1uTAeaRFjRe6" target="_blank" rel="noreferrer">Parkway Bank Parking Garage</a> is $15 a day.
+    </li>
+    <li>
+      <span class="font-bold">Badge pickup:</span>
+      Hall A in the <a target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/Ae7iLPZHdPvgsHNw5">Donald E. Stephens Convention Center.</a>
+    </li>
+    <li>
+      <span class="font-bold">Concert:</span>
+      {{ show.transit.concertLine }}
+    </li>
+  </ul>
+</article>
