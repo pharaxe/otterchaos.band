@@ -19,8 +19,13 @@ function assertNonEmptyString(item, key, index) {
 }
 
 function assertOptionalString(item, key, index) {
-  if (key in item && (typeof item[key] !== "string" || item[key].trim() === "")) {
-    fail(`item ${index} has optional field \"${key}\" but it is not a non-empty string`);
+  if (
+    key in item &&
+    (typeof item[key] !== "string" || item[key].trim() === "")
+  ) {
+    fail(
+      `item ${index} has optional field \"${key}\" but it is not a non-empty string`,
+    );
   }
 }
 
@@ -53,6 +58,7 @@ const requiredStringFields = [
   "metaImage",
   "title",
   "dateString",
+  "timezone",
   "startTime",
   "location",
   "conName",
@@ -94,7 +100,9 @@ shows.forEach((item, index) => {
     fail(`item ${index} field \"dateString\" must match YYYY-MM-DD`);
   }
 
-  const [year, month, day] = item.dateString.split("-").map((part) => Number.parseInt(part, 10));
+  const [year, month, day] = item.dateString
+    .split("-")
+    .map((part) => Number.parseInt(part, 10));
   const parsedDate = new Date(Date.UTC(year, month - 1, day));
   if (
     Number.isNaN(parsedDate.getTime()) ||
@@ -135,9 +143,17 @@ shows.forEach((item, index) => {
     }
 
     const registration = item.registration;
-    const requiredRegistrationFields = ["title", "details", "buttonText", "buttonUrl"];
+    const requiredRegistrationFields = [
+      "title",
+      "details",
+      "buttonText",
+      "buttonUrl",
+    ];
     for (const field of requiredRegistrationFields) {
-      if (typeof registration[field] !== "string" || registration[field].trim() === "") {
+      if (
+        typeof registration[field] !== "string" ||
+        registration[field].trim() === ""
+      ) {
         fail(
           `item ${index} field \"registration\" is missing required non-empty string field \"${field}\"`,
         );
@@ -158,7 +174,9 @@ shows.forEach((item, index) => {
         typeof registration.alertText !== "string" ||
         registration.alertText.trim() === "")
     ) {
-      fail(`item ${index} field \"registration\" alert fields must be non-empty strings`);
+      fail(
+        `item ${index} field \"registration\" alert fields must be non-empty strings`,
+      );
     }
 
     const hasStreamText = "streamText" in registration;
@@ -175,7 +193,9 @@ shows.forEach((item, index) => {
         typeof registration.streamUrl !== "string" ||
         registration.streamUrl.trim() === "")
     ) {
-      fail(`item ${index} field \"registration\" stream fields must be non-empty strings`);
+      fail(
+        `item ${index} field \"registration\" stream fields must be non-empty strings`,
+      );
     }
   }
 
@@ -197,8 +217,13 @@ shows.forEach((item, index) => {
     if (!isPlainObject(item.transit)) {
       fail(`item ${index} field \"transit\" must be an object`);
     }
-    if (typeof item.transit.concertLine !== "string" || item.transit.concertLine.trim() === "") {
-      fail(`item ${index} field \"transit\" must include non-empty string field \"concertLine\"`);
+    if (
+      typeof item.transit.concertLine !== "string" ||
+      item.transit.concertLine.trim() === ""
+    ) {
+      fail(
+        `item ${index} field \"transit\" must include non-empty string field \"concertLine\"`,
+      );
     }
   }
 });

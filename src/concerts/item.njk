@@ -32,9 +32,10 @@ eleventyComputed:
         <h1 class="text-left max-w-2xl mb-4 text-3xl font-extrabold leading-none md:text-4xl xl:text-5xl dark:text-white">
           {{ show.title }}
         </h1>
-        <p class="max-w-2xl mb-6 text-left text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+        <div class="max-w-2xl mb-6 text-left text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
           {{ show.dateString | formatConcertDate }}, {{ show.startTime | formatConcertTimeRange(show.endTime) }}, {{ show.location }}
-        </p>
+          {% include "add-to-calendar-inline.njk" %}
+        </div>
         <article class="inline-flex flex-col items-center gap-4 justify-center bg-stone-300 p-7 rounded-xl">
           <p class="text-left">{{ show.description }}</p>
           {% if show.scheduleIntro %}

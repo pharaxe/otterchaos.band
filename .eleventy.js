@@ -2,6 +2,7 @@ import postcssPlugin from "@jgarber/eleventy-plugin-postcss";
 import htmlminifier from "html-minifier-terser";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import Image from "@11ty/eleventy-img";
+import { buildCalendarLinks } from "./src/helpers/calendar-links.js";
 
 const IS_PROD_BUILD = process.env.NODE_ENV === "production";
 
@@ -58,6 +59,7 @@ export default function (eleventyConfig) {
 
     return `${start}-${end}`;
   });
+  eleventyConfig.addFilter("calendarLinks", buildCalendarLinks);
   eleventyConfig.addPassthroughCopy({ "./src/img/favicon": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/static": "/" });
   eleventyConfig.addPassthroughCopy("./CNAME");

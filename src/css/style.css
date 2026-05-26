@@ -76,13 +76,28 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-top:1px;
+  padding-top: 1px;
   background: repeating-linear-gradient(
     0deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(34, 193, 195, 1) 60%,
     rgba(253, 187, 45, 1) 100%
   );
+}
+
+.calendar-dropdown > .calendar-details-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+}
+
+.calendar-dropdown:hover > .calendar-details-menu,
+.calendar-dropdown:focus-within > .calendar-details-menu,
+.calendar-dropdown:active > .calendar-details-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /*
