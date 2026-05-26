@@ -75,15 +75,16 @@
     "conShortName": "Furality",
     "posterImage": "./src/img/furality-ultra.png",
     "posterAlt": "Otter Chaos! Video Game Concert - Furality Ultra, June 4th at 10:00PM CDT.",
-    "description": "Key and Rhubarb are back for another live Otter Chaos! concert. Join them for some gorgeous violin and piano covers of some of your favorite video game tunes from the era of the UltraVox Prism-featuring tracks from Katamari Damacy, Super Mario Galaxy, Persona 3, and more!",
+    "description": "Key and Rhubarb are back for another live Otter Chaos! concert in virtual reality. Join them for violin and piano covers of some of your favorite video game tunes from the era of the UltraVox Prism-featuring tracks from Katamari Damacy, Super Mario Galaxy, Persona 3, and more!",
     "scheduleLink": "https://furality.org/schedule?active=otter-chaos",
     "scheduleButtonText": "Furality Ultra Schedule",
     "registration": {
       "title": "Register for Furality Ultra",
-      "details": "The concert is open to all attendees of Furality Ultra. The General Pass is $35 which will get you access to the VRChat instances where all the events happen. Age verification is required this year so make sure to read the requirements here: <a href=\"https://furality.org/ageverification\" target=\"_blank\">https://furality.org/ageverification</a>. If you can't attend in VRChat, you can watch the show on <a href=\"https://www.twitch.tv/furality\" target=\"_blank\" rel=\"noopener\">twitch.tv/furality</a>.",
+      "details": "The concert is open to all attendees of Furality Ultra. The General Pass is $35 which will get you access to the VRChat instances where all the events happen.<br /> Age verification is required this year so make sure to read the requirements here: <a href=\"https://furality.org/ageverification\" target=\"_blank\">https://furality.org/ageverification</a>.",
       "buttonText": "Furality Registration",
       "buttonUrl": "https://furality.org/register"
-    }
+    },
+    "howToAttendCardIncludes": ["show-cards/furality-twitch-stream.njk"]
   },
   {
     "slug": "ifc-2025",
@@ -134,9 +135,7 @@
       "alertTitle": "Reg line can be long",
       "alertText": "Pick up your badge Thursday evening or Friday morning to make sure you can attend the concert."
     },
-    "howToAttendCardIncludes": [
-      "show-cards/mff-transit.njk"
-    ],
+    "howToAttendCardIncludes": ["show-cards/mff-transit.njk"],
     "transit": {
       "concertLine": "2:30pm - 3:30pm on Friday Dec. 6th, Grand Ballroom (Main Stage) in the Hyatt Regency O'Hare."
     }
@@ -171,9 +170,7 @@
       "alertTitle": "Reg line can be long",
       "alertText": "Pick up your badge Thursday evening or Friday morning to make sure you can attend the concert."
     },
-    "howToAttendCardIncludes": [
-      "show-cards/mff-transit.njk"
-    ],
+    "howToAttendCardIncludes": ["show-cards/mff-transit.njk"],
     "transit": {
       "concertLine": "5:00pm - 6:30pm on Friday Dec. 5th, Grand Ballroom (Main Stage) in the Hyatt Regency O'Hare."
     }
