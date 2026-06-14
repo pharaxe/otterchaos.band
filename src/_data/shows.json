@@ -1,5 +1,32 @@
 [
   {
+    "slug": "ac-2026",
+    "metaTitle": "Otter Chaos! Anthrocon 2026 Concert",
+    "metaDescription": "Otter Chaos! is performing at Anthrocon on Friday, July 3, 2026 at 3pm.",
+    "metaImage": "/ac-2026.png",
+    "title": "Otter Chaos! at Anthrocon",
+    "dateString": "2026-07-03",
+    "timezone": "America/New_York",
+    "startTime": "3:00pm",
+    "location": "Pittsburgh, Pennsylvania",
+    "conName": "Anthrocon",
+    "conShortName": "AC",
+    "posterImage": "./src/img/ac-2026.png",
+    "posterAlt": "Otter Chaos! Video Game Concert - Anthrocon 2026, Friday July 3rd at 3:00pm.",
+    "description": "Otter Chaos! is bringing live video game music to Anthrocon 2026. Join us Friday afternoon for an energetic set featuring our full band of 15 furry musicians! We'll be performing original arrangements from games like Pokemon, Sonic, Metal Gear Solid, Final Fantasy, and Castlevania; featuring instruments such as accordion, electric violin, steel pans, and more!",
+    "scheduleLink": "https://web.venvi.app/nhYLKtOYu14gUHLa49Vb/gDf6E0FN4xdjr1R9WEo4/schedule/event/dhMbYelFIgSp8qYBdYIF",
+    "scheduleButtonText": "Anthrocon 2026 Schedule",
+    "registration": {
+      "title": "Register for Anthrocon",
+      "details": "The concert is open to all Anthrocon attendees. On-site price for a badge is $100. There's also day passes available for $50.",
+      "buttonText": "Anthrocon Registration",
+      "buttonUrl": "https://www.anthrocon.org/registration/",
+      "alertTitle": "Registration line can be long",
+      "alertText": "Picking up your badge on Thursday or Friday morning is useful so you can make it to the concert on time."
+    },
+    "howToAttendCardIncludes": ["show-cards/ac-youtube-stream.njk"]
+  },
+  {
     "slug": "f2-2025",
     "metaTitle": "Otter Chaos! F2 2025 Concert",
     "metaDescription": "Otter Chaos! is performing at FurSquared on Feb 23, 2025.",
