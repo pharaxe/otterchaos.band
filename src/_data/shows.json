@@ -1,5 +1,38 @@
 [
   {
+    "slug": "mff-2026",
+    "metaTitle": "Otter Chaos! MFF 2026 Concert",
+    "metaDescription": "Otter Chaos! is performing at Midwest FurFest on Friday, Dec 4, 2026 at 3:30pm on the Main Stage.",
+    "metaImage": "/mff-2026.jpg",
+    "title": "Otter Chaos! at Midwest FurFest",
+    "dateString": "2026-12-04",
+    "timezone": "America/Chicago",
+    "startTime": "3:30pm",
+    "endTime": "4:30pm",
+    "location": "Rosemont, Illinois",
+    "conName": "Midwest FurFest",
+    "conShortName": "MFF",
+    "posterImage": "./src/img/mff-2026.png",
+    "posterAlt": "Otter Chaos! Video Game Music Concert - Midwest FurFest 2026, Friday Dec 4 at 3:30pm, Main Stage.",
+    "description": "Get ready for… Otter Chaos! This furry video game music band is back for another chaotic concert at Midwest FurFest! They perform original arrangements of tunes from game series such as Zelda, Deltarune, Final Fantasy and more! You won't want to miss this uniquely chaotic show featuring an eclectic group of instruments including accordion, steel pans, electric violins, trombone, drums, and more!",
+    "scheduleIntro": "Doors open at 3:00pm. Find us on MFF's online schedule: Friday, 3:30pm, Hyatt Grand Ballroom - Main Stage.",
+    "scheduleLink": "https://furfest.furrvent.com/schedule",
+    "scheduleButtonText": "MFF 2026 Schedule",
+    "registration": {
+      "title": "Register for MFF",
+      "details": "The concert is open to all attendees of the convention. Badge price at the door is $55 for a Friday badge, or $110 for the full weekend badge. Pre-registration ends November 24.",
+      "buttonText": "MFF Registration Info",
+      "buttonUrl": "https://www.furfest.org/attend/register",
+      "alertTitle": "Reg line can be long",
+      "alertText": "Pick up your badge Thursday evening or Friday morning to make sure you can attend the concert."
+    },
+    "howToAttendCardIncludes": ["show-cards/mff-transit.njk"],
+    "transit": {
+      "badgePickupHall": "Hall F",
+      "concertLine": "3:30pm - 4:30pm on Friday Dec. 4th, Grand Ballroom (Main Stage) in the Hyatt Regency O'Hare."
+    }
+  },
+  {
     "slug": "ac-2026",
     "metaTitle": "Otter Chaos! Anthrocon 2026 Concert",
     "metaDescription": "Otter Chaos! is performing at Anthrocon on Friday, July 3, 2026 at 3pm.",
